@@ -7,9 +7,14 @@
 
       <a-assets>
         <video id="sample-video" autoplay loop="true" src="sample_video.mp4"></video>
+        <img id="my-image" src="sample_image.png">
       </a-assets>
 
-      <a-video src="#sample-video" width="16" height="9" position="0 0 -20"></a-video>
+      <a-marker preset="hiro">
+        <a-image src="#my-image"></a-image>
+        <a-box color="tomato" depth="2" height="1" width="0.5"></a-box>
+      </a-marker>
+      <a-video src="#sample-video" width="2" height="2" position="0 0 -20"></a-video>
 
       <a-entity camera></a-entity>
     </a-scene>
